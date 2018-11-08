@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+        <title>Notes App</title>
+        <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="icon" href="/images/favicon.png">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                    <h1 class="header__title">Notes App</h1>
+                    <h2 class="header__subtitle">Take notes and never forget.</h2>
+            </div>
+        </header>
+        <div class="actions">
+            <div class="actions__container">
+                <input type="text" id="search-text" class="input" placeholder="filter notes">
+                <select id="sort-by" class="dropdown">
+                    <option value="byEdited"> Sort by last edited</option>
+                    <option value="byCreated">Sort by recently created</option>
+                    <option value="alphabetical">Sort alphabetically</option>
+                </select>
+            </div>
+        </div>
+        <div class="container">
+            <div id="notes"></div>
+            <button id="create-note" class="button">Create Note</button>
+        </div>
+        <script src="/scripts/index-bundle.js"></script>
+    </body>
+</html>
